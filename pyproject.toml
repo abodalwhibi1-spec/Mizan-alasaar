@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexprice"
+version = "0.1.0"
+description = "محرك لتحليل الطلب واقتراح الأسعار الديناميكية"
+requires-python = ">=3.10"
+
+[project.scripts]
+nexprice = "nexprice.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["nexprice*"]
